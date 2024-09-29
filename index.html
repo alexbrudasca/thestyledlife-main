@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <bds />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS and JavaScript -->
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script src="index.js" defer></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <!-- Tailwind CDn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper js -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    <title>BigDevSoon - Blog Project</title>
+  </head>
+  <body>
+      <nav class="flex justify-between items-center md:p-4 md:mr-9 md:max-w-full shadow-xl w-full h-[50px] p-4">
+        <div class="logo flex flex-1">
+          <p class="text-slate-900 font-semibold">
+            <span class="text-gray-400">THE</span> STYLEDLIFE
+          </p>
+        </div>
+        <ul 
+          class="listMenu transition md:flex-1 md:flex md:justify-center md:space-x-7 md:items-center md:text-sm md:font-semibold md:text-slate-900 md:pr-5 cursor-pointer hidden">
+          <a href="#welcome" class=""><li>About</li></a>
+          <a href="#blogPost"><li>Blog</li></a>
+          <a href="#footer"><li>Contact</li></a>
+          <div
+            class="flex items-center justify-center space-x-5 pr-6 text-sm relative"
+          >
+            <div class="w-[0.080rem] h-3 bg-slate-800 absolute -left-2"></div>
+            <div class="w-[0.080rem] h-3 bg-slate-800 absolute -right-2"></div>
+            <i class="fa-brands fa-facebook transition hover:text-slate-700"></i>
+            <i class="fa-brands fa-instagram transition hover:text-slate-700"></i>
+            <i class="fa-brands fa-twitter transition hover:text-slate-700"></i>
+            <i class="fa-brands fa-google transition hover:text-slate-700"></i>
+          </div>
+          <li class="text-xs cursor-pointer transition hover:text-slate-500">
+            <i class="fa-solid fa-search transition hover:text-slate-600"></i>
+            <input
+              type="text"
+              class="w-0 max-w-[15rem] transition border-b-2 border-slate-700 outline-none"
+            />
+          </li>
+        </ul>
+        <div class="burger cursor-pointer md:hidden">
+          <i class="fa-solid fa-bars transition hover:text-slate-500 "></i>
+        </div>
+      </nav> 
+
+      
+      <section class="main relative h-screen mb-4 w-full">
+        <div class="absolute -z-10 h-screen w-full">
+          <img src="/assets/images/background-image.png" class="w-full h-screen object-cover" alt="">
+        </div>
+        <div class="z-10 md:p-32 md:px-44 md:space-y-6 md:flex  md:items-start flex items-center flex-col justify-center max-h-screen h-full">
+          <h1 class="text-5xl font-semibold tracking-wide md:text-left text-center">Elevate Life <br>with Style</h1>
+          <p class="md:max-w-xs md:text-sm md:pb-4 font-medium max-w-xs md:text-left text-center text-xs mt-3">Explore a curated blend of style and purpose at <span class="tracking-wide font-medium text-slate-900">THE LIFESTYLED</span>, where every post is a step towards a more inspired and elevated life.</p>
+          <a href="#blogPost" class="pt-3">
+            <button class="bg-yellow-500 text-white px-5 rounded-md">Read Blod</button>
+          </a>
+        </div>
+      </section>
+
+
+      <section id="blogPost" class="blogPost  lg:mt-5  relative lg:h-screen lg:w-full lg:p-4">
+        <div class="line absolute w-full h-[0.020rem] bg-gray-300 left-0 -bottom-7"></div>
+        <div class="flex justify-between items-center max-w-5xl pb-7">
+          <h3 class="font-semibold italic md:pb-5 md:pl-32">Blog Post</h3>
+          <a href="" class="text-xs">View All posts <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="md:flex md:space-x-2 md:justify-between md:max-w-full md:px-44 md:w-full md:h-[390px] "> 
+          <div class="">
+            <div class="max-w-sm shadow-md relative">
+              <img src="/assets/images/photo-3.png" class="w-full h-full rounded-md" alt="">
+              <div class="flex mt-3 p-2">
+                <div class="w-full space-y-2">
+                  <button class="text-sm bg-yellow-500 text-white px-2 rounded-2xl">Fashion</button>
+                  <p class="text-sm font-semibold w-full">12 Style essentials that make it easy to get dressed</p>
+                </div>
+                <div class="absolute right-4">
+                  <span class="text-xs flex text-slate-600">6 Dec 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-5 max-w-sm justify-between mt-5">
+          </div>
+            <div class="flex max-w-md justify-between">
+              <div class="">
+                <div class="max-w-[170px] h-1/2 shadow-md relative">
+                  <img src="/assets/images/photo-8.png" class="w-full h-full rounded-md object-cover" alt="">
+                  <div class="flex mt-3 p-2">
+                    <div class="w-full space-y-2">
+                      <button class="text-sm bg-yellow-500 text-white px-2 rounded-2xl">Fashion</button>
+                      <p class="text-xs font-semibold w-full">The Key Spring/Summer 2024 Trends to Know Now</p>
+                    </div>
+                    <div class="absolute right-4">
+                      <span class="text-xs flex text-slate-600">1 Dec 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="max-w-[170px] h-1/2 shadow-md relative">
+                  <img src="/assets/images/photo-20.png" class="object-cover w-full h-full rounded-md" alt="">
+                  <div class="flex mt-3 p-2">
+                    <div class="w-full space-y-2">
+                      <button class="text-sm bg-blue-500 text-white px-2 rounded-2xl">Life Style</button>
+                      <p class="text-xs font-semibold w-full">A Woman's lifestyle journal</p>
+                    </div>
+                    <div class="absolute right-4">
+                      <span class="text-xs flex text-slate-600">6 Dec 2023</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <!--  -->
+            </div>
+          </div>
+          <!-- right column -->
+          <div class="">
+            <div class="max-w-6xl shadow-md w-full h-[100%] relative">
+              <img src="/assets/images/photo-17.png" class="w-full h-full rounded-md" alt="">
+              <div class="flex mt-3 p-2">
+                <div class="w-full space-y-2">
+                  <button class="text-sm bg-pink-500 text-white px-2 rounded-2xl">Beauty</button>
+                  <p class="text-sm font-semibold w-full">Unveling  Beauty Secrets</p>
+                </div>
+                <div class="absolute right-4">
+                  <span class="text-xs flex text-slate-600">6 Dec 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="welcome" class="welcome md:my-20 md:px-32 md:flex md:w-full md:space-x-32 md:justify-between md:items-center my-24 px-4 text-xs w-full">
+      <div class="flex md:max-w-md flex-col space-y-5 text-sm text-slate-900 max-w-full">
+        <h3 class="font-semibold text-lg">Welcome, I'm Caroline</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae odit architecto, vel voluptatum atque rem dolorum quia dignissimos magnam inventore distinctio. Saepe expedita repellat quae. Rerum sint soluta quam nostrum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum excepturi. Id consequatur, deleniti ea optio itaque sunt facilis assumenda error impedit fuga voluptates odio earum amet alias! Accusantium, temporibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora similique beatae esse at quaerat, sit quisquam sint saepe repudiandae rerum aliquid fuga, aliquam natus.</p>
+      </div>
+      <div class="images flex space-x-1  flex-1">
+          <div class="flex flex-col justify-center">
+            <img src="/assets/images/photo-12.png" class="w-[150px] h-[300px] rounded-full object-cover border " alt="">
+            <img src="/assets/images/photo-13.png" class="img13 w-[170px] h-[200px] rounded-full border object-cover -translate-x-4 -translate-y-12" alt="">
+          </div>
+          <img src="/assets/images/photo-15.png" class="w-[200px] h-[450px] object-cover rounded-full" alt="">
+      </div>
+      </section>
+
+      <section class="followSocials flex flex-col items-center justify-center space-y-6">
+        <h1 class="text-xl italic font-semibold text-center">Follow my lifestyle daily on Instagram and join 100k others.</h1>
+        <p class="text-base font-semibold">@thestyledlife / #the styledlife</p>
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/assets/images/photo-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-2.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-4.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-5.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-6.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-7.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-9.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-10.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-11.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-14.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-16.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-18.png" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="/assets/images/photo-19.png" alt=""></div> -->
+            <div class="swiper-slide"><img src="/assets/images/photo-21.png" alt=""></div>
+            <div class="swiper-slide"><img src="/assets/images/photo-22.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="footer space-y-7 mb-5 relative ">
+        <div class="absolute w-full h-[0.080rem] bg-slate-300 -bottom-2 left-0"></div>
+        <div class="w-full flex justify-between  px-14 flex-wrap space-y-4">
+         <div>
+          <h1 class="font-base tracking-widest text-slate-700">THE STYLEDLIFE</h1>
+          <p class="max-w-xs text-xs text-slate-900">Get insired! Recive discounts, tips and behind the scenes stories</p>
+         </div>
+         <ul class="flex text-xs font-semibold space-x-6 text-slate-700">
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+         </ul>
+         <div class="relative">
+          <input type="text" class="w-full border-b-4 outline-none placeholder:text-xs" placeholder="type here..">
+          <i class="fa-solid fa-search absolute right-1 top-1 text-slate-500 size-[0.16rem]"></i>
+         </div>
+        </div>
+
+        <div class="newsLetter md:flex md:justify-between  md:px-14 md:flex-wrap md:space-y-4">
+          <div class=" w-full px-7 relative flex items-center justify-center">
+            <input id="email" type="email" placeholder="Your email" class="w-full bg-slate-200 rounded-3xl pl-3 h-[30px]"/>
+            <button type="submit" id="sendEmail" class="absolute right-0  bg-yellow-500 text-white h-[30px] px-3 rounded-xl text-sm font-semibold">Subscribe</button>
+          </div>
+
+          <div class="flex justify-between w-full max-w-full mt-5 text-slate-800">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </div>
+      </section>
+      <section class="flex w-full items-center  px-16 text-xs  flex-wrap space-y-3 space-x-7 pb-4 text-gray-500">
+        <div class="flex space-x-6 flex-wrap">
+          <p>© thestyledlife <span id="year">2024</span>.All rights reserverd</p>
+
+          <div class="flex items-center">
+            <p>Privacy Policy</p>
+            <p>Terms of services</p>
+          </div>
+        </div>
+      </section>
+
+ 
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

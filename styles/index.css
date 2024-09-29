@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  font-family: "Playfair Display",serif;
+}
+.main p{
+  font-family: "Mukta",sans-serif;
+}
+.main button{
+  font-family: "Mukta",sans-serif;
+
+}
+.welcome p{
+  font-family: "Mukta",serif;
+  
+}
+
+.img13{
+  border: 4px solid white;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+.swiper-slide img{
+  width: 100%;
+  max-height: 60%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#welcome p{
+  font-family: "Mukta";
+}
+
+.followSocials h1{
+  font-family: "Playfair Display",sans-serif;
+  
+}
+.followSocials p{
+  font-family: "Mukta",sans-serif;
+  
+}
+
+
+
+.footer button,
+.fotoer input{
+  font-family: "Mukta",sans-serif;
+
+}
+.listMenu{
+  font-family: "Mukta",sans-serif;
+  animation:list .5s  forwards linear;
+  transition: all ease;
+}
+
+.listMenu.active li:hover{
+  color: rgb(7, 1, 46);
+}
+
+@keyframes list{
+  0%{
+    width: 0;
+    opacity: 0;
+  }
+  100%{
+    width: 100%;
+    opacity: 1;
+  }
+}
+@media(max-width:520px){
+    .listMenu.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    opacity: 80px;
+    z-index: 99;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-in;
+  }
+}
+
+
+.burger{
+  z-index: 99;
+}
+.logo p{
+  z-index: 98;
+}
+/* This is an example CSS file, feel free to remove/edit it anytime */
+
